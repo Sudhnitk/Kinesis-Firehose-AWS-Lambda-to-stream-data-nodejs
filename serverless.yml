@@ -8,7 +8,7 @@ provider:
     - Effect: "Allow"
       Action:
         - firehose:PutRecord
-      Resource: "arn:aws:firehose:us-east-1:657750297473:deliverystream/PUT-S3-EBGEB"
+      Resource: "arn:aws:firehose:us-east-1:657750297473:deliverystream/PUT-S3-yVzRP"
 
 functions:
   sendToFirehose:
@@ -18,4 +18,4 @@ functions:
           path: sendToFirehose
           method: post # Example event trigger, can be replaced with your own trigger
       - firehose:
-        arn: "arn:aws:firehose:us-east-1:657750297473:deliverystream/PUT-S3-EBGEB"
+        arn: "arn:aws:firehose:us-east-1:657750297473:deliverystream/PUT-S3-yVzRP"

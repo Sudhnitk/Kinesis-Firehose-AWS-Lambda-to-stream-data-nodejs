@@ -14,7 +14,7 @@
           "Action": [
             "firehose:PutRecord"
           ],
-          "Resource": "arn:aws:firehose:us-east-1:657750297473:deliverystream/PUT-S3-EBGEB"
+          "Resource": "arn:aws:firehose:us-east-1:657750297473:deliverystream/PUT-S3-yVzRP"
         }
       ],
       "stage": "dev",
@@ -186,7 +186,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/task-kinesis/dev/1702620157762-2023-12-15T06:02:37.762Z/task-kinesis.zip"
+                "S3Key": "serverless/task-kinesis/dev/1702629718017-2023-12-15T08:41:58.017Z/task-kinesis.zip"
               },
               "Handler": "handler.sendToFirehose",
               "Runtime": "nodejs14.x",
@@ -204,14 +204,14 @@
               "SendToFirehoseLogGroup"
             ]
           },
-          "SendToFirehoseLambdaVersiondLuQxfbQkKR7O13WLEJSKIN7cAnsQlnhgXVo4VFQ": {
+          "SendToFirehoseLambdaVersionDsn5eAhCF4UzcIfFEk9BjFKeQIvEQeh7RdKrKiWO8N4": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "SendToFirehoseLambdaFunction"
               },
-              "CodeSha256": "GNYzkV5Gmt0m0Gzk/In9LtEJeIQTAY7+c/qtPcZ9L5E="
+              "CodeSha256": "8X954lLGpofRaqVVI/SzalSO1sKaqzUtjtdoNSikD5c="
             }
           },
           "ApiGatewayRestApi": {
@@ -287,7 +287,7 @@
               "SendToFirehoseLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1702620148793": {
+          "ApiGatewayDeployment1702629710352": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -349,7 +349,7 @@
           "SendToFirehoseLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "SendToFirehoseLambdaVersiondLuQxfbQkKR7O13WLEJSKIN7cAnsQlnhgXVo4VFQ"
+              "Ref": "SendToFirehoseLambdaVersionDsn5eAhCF4UzcIfFEk9BjFKeQIvEQeh7RdKrKiWO8N4"
             },
             "Export": {
               "Name": "sls-task-kinesis-dev-SendToFirehoseLambdaFunctionQualifiedArn"
@@ -480,7 +480,7 @@
             }
           },
           {
-            "arn": "arn:aws:firehose:us-east-1:657750297473:deliverystream/PUT-S3-EBGEB",
+            "arn": "arn:aws:firehose:us-east-1:657750297473:deliverystream/PUT-S3-yVzRP",
             "firehose": null
           }
         ],
@@ -490,7 +490,7 @@
         "timeout": 6,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "SendToFirehoseLambdaVersiondLuQxfbQkKR7O13WLEJSKIN7cAnsQlnhgXVo4VFQ"
+        "versionLogicalId": "SendToFirehoseLambdaVersionDsn5eAhCF4UzcIfFEk9BjFKeQIvEQeh7RdKrKiWO8N4"
       }
     },
     "configValidationMode": "warn",
@@ -509,7 +509,7 @@
     "artifact": "C:\\Users\\SUDKAUR\\SubwayKT\\SubAssignments\\task-kinesis\\.serverless\\task-kinesis.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/task-kinesis/dev/1702620157762-2023-12-15T06:02:37.762Z",
+    "artifactDirectoryName": "serverless/task-kinesis/dev/1702629718017-2023-12-15T08:41:58.017Z",
     "artifact": "task-kinesis.zip"
   }
 }
